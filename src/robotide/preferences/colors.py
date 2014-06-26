@@ -45,7 +45,7 @@ class ColorPreferences(PreferencesPanel):
                                 title,
                                 [str(i) for i in range(8, 49)]
         )
-        font_size_sizer = wx.FlexGridSizer(rows=1, cols=1)
+        font_size_sizer = wx.FlexGridSizer(cols=1)
         font_size_sizer.AddMany([f.label(self), (f.chooser(self),)])
         return font_size_sizer
 
