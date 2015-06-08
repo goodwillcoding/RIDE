@@ -22,7 +22,7 @@ from logger import Logger
 from platform import (IS_MAC, IS_WINDOWS, WX_VERSION, ctrl_or_cmd,
     bind_keys_to_evt_menu)
 LOG = Logger()
-ROBOT_LOGGER.disable_automatic_console_logger()
+ROBOT_LOGGER.unregister_console_logger()
 ROBOT_LOGGER.register_logger(LOG)
 
 SETTING_EDITOR_WIDTH = 450
